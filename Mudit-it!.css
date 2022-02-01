@@ -7,6 +7,8 @@
   background: #000000;
   justify-content: space-around;
   border-radius: 20px;
+  border: 0.5px solid gray;
+  box-shadow: 0 0 40px gray;
 }
 .logo {
   margin: 0;
