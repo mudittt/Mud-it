@@ -1,50 +1,22 @@
 .container {
-  display: grid;
-  grid-template-columns: repeat(5, 10vw);
-  grid-template-rows: repeat(7, 10vh);
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  justify-items: center;
-  grid-template-areas:
-    "A A B B C"
-    "A A B B C"
-    "A A D D D"
-    "E E E F F"
-    "E E E F F"
-    "G G H H H"
-    "G G H H H";
+  max-width: 1140px;
+  margin: 0 auto;
 }
-
-.box1 {
-  background-image: url(/svg_icons/reddit-5095703.svg);
-  grid-area: A;
+.header {
+  display: flex;
+  background: #000000;
+  justify-content: space-around;
+  border-radius: 20px;
 }
-.box2 {
-  background: cyan;
-  grid-area: B;
+.logo {
+  margin: 0;
 }
-.box3 {
-  background: tomato;
-  grid-area: C;
+.logo-name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #ffffff;
+  margin: 0;
 }
-.box4 {
-  background: gold;
-  grid-area: D;
-}
-.box5 {
-  background: pink;
-  grid-area: E;
-}
-.box6 {
-  background: green;
-  grid-area: F;
-}
-.box7 {
-  background: peru;
-  grid-area: G;
-}
-.box8 {
-  background: indigo;
-  grid-area: H;
+.logo-icon {
+  margin-top: 0.5rem;
 }
