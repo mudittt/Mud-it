@@ -81,9 +81,25 @@ body {
   align-self: center;
 }
 
-.twitter-img {
+.twitter-img,
+.mail-img {
   box-shadow: 0 0 50px #afd5da;
 }
 .insta-img {
   box-shadow: 0 0 50px #e9a9bf;
+}
+
+.tele-img {
+  box-shadow: 0 0 50px #28293b;
+}
+.in-img,
+.reddit-img {
+  box-shadow: 0 0 50px #ceb799;
+}
+
+.spotify-img {
+  box-shadow: 0 0 50px #59834d;
+}
+.git-img {
+  box-shadow: 0 0 50px #91a2dd;
 }
