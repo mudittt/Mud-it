@@ -13,34 +13,56 @@ body {
   margin: 0 auto;
   border-radius: 30px;
   box-shadow: 0 0 60px #dbdddf;
+  transition: background 0.5s;
+}
+
+.container:hover {
+  background: #dbdddf;
 }
 
 /* HEADER */
 
+.container-header {
+  max-width: 90vw;
+  margin: 0 auto;
+}
+
 .header {
   display: flex;
-  background: #000000;
+  /* background: #5a5a7c; */
   justify-content: space-around;
   border-radius: 20px;
-  border: 0.5px solid gray;
-  box-shadow: 0 0 40px gray;
+  /* border: 0.5px solid gray; */
+  /* box-shadow: 0 0 40px gray; */
 }
 .logo {
   margin: 0;
+  font-family: "Courier New", Courier, monospace;
 }
 .logo-name {
-  color: #ffffff;
+  color: var(--heading-color);
+  font-size: 5rem;
+  font-weight: 900;
   margin: 0;
+  text-align: center;
 }
-.logo-icon {
+
+.logo-description {
+  margin: 0;
+  justify-self: center;
+  color: var(--content--color);
+  text-align: center;
+}
+
+/* .logo-icon {
   margin-top: 0.5rem;
-}
+} */
 
 /* GRID */
 
 .grid {
   border: 0.0005px solid rgb(255, 255, 255);
-  margin-top: 4rem;
+  margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(2, 50%);
 }
@@ -48,6 +70,11 @@ body {
 .grid-image {
   display: flex;
   align-items: center;
+  transition: transform 0.3s;
+}
+
+.grid-image:hover {
+  transform: scale(0.9);
 }
 
 .grid-image > img {
@@ -60,6 +87,11 @@ body {
   margin: 4rem auto;
   font-size: 1.5rem;
   padding: 20px;
+  transition: transform 0.3s;
+}
+
+.grid-content:hover {
+  transform: scale(0.9);
 }
 
 .grid-heading {
@@ -75,9 +107,15 @@ body {
 .grid-link {
   display: inline-flex;
   font-style: none;
-  color: rgb(0, 0, 0);
+  color: rgb(5, 134, 255);
   margin-top: 3rem;
   font-size: 0.9rem;
+  transition: transform 0.3s;
+}
+
+.grid-link:hover {
+  color: var(--content--color);
+  transform: scale(1.1);
 }
 
 .grid-icon-link {
@@ -88,4 +126,5 @@ body {
 
 .grid-link-text {
   align-self: center;
+  margin-left: 0.5rem;
 }
