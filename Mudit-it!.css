@@ -134,6 +134,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .grid {
+    margin-top: 4rem;
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, 50%);
   }
@@ -142,6 +143,11 @@ body {
     border-radius: 30px;
     width: 100%;
     max-height: 100%;
+  }
+
+  .grid-content {
+    text-align: center;
+    font-size: 1.2rem;
   }
 }
 
